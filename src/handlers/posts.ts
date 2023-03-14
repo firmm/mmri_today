@@ -3,7 +3,7 @@ import Store from '../posts_store'
 const Posts = async () => {
   const posts = new Store()
   const values = await posts.today()
-  const body = {"tenyear": values.pop(), "dxy": values.pop()}
+  const body = {"dxy": values.pop(), "tenyear": values.pop()}
   const headers = {
     'Access-Control-Allow-Origin': '*',
     'Content-type': 'application/json'
